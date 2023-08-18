@@ -1,4 +1,4 @@
-# TODOx
+# HTMX vs THE WORLD
 
 TODOx is a todo list app built with Go, HTMX, Tailwind CSS and SQLite to store the data. The original goal of this app is to try HTMX and see how it can be used to build a simple app.
 
