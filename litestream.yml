@@ -1,0 +1,10 @@
+access-key-id: 005e6476432f0dd0000000001
+secret-access-key: K005TdWYDTt7h4HL1h8lNFjZm2/Ihhk
+
+dbs:
+  - path: todox.db
+    replicas:
+      - type: s3
+        endpoint: s3.us-east-005.backblazeb2.com
+        bucket: htmx-go
+        path: todos
