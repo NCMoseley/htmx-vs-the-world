@@ -5,4 +5,3 @@ bin
 todox.db**
 .env
 .DS_Store
-litestream.yaml
