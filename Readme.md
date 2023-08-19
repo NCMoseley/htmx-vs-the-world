@@ -38,6 +38,12 @@ In order to install the app in development you should download the tailwind css 
 make setup
 ```
 
+Docker: 
+
+```
+docker build -t htmx-go .
+```
+
 ### Running 
 To run the app in development you can run the following command:
 
@@ -45,6 +51,11 @@ To run the app in development you can run the following command:
 make run
 ```
 
+Docker
+
+```
+docker run -p 3000:3000 htmx-go
+```
 And visit http://localhost:3000 to see the app running.
 
 ## Deploying
