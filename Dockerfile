@@ -16,8 +16,6 @@ RUN apk add --no-cache ca-certificates
 
 WORKDIR /bin/
 
-COPY .env .
-
 # Copying binaries
 COPY --from=builder /src/todox/bin/app .
 COPY --from=builder /src/todox/bin/tools .
@@ -28,4 +26,3 @@ ADD litestream.yml /etc/litestream.yml
 CMD litestream restore -if-db-not-exists -if-replica-exists -v todox.db &&\
     /bin/tools migrate &&\
     litestream replicate -exec "/bin/app"
-
