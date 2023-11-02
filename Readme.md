@@ -38,6 +38,12 @@ In order to install the app in development you should download the tailwind css 
 make setup
 ```
 
+Docker: 
+
+```
+docker build -t htmx-go .
+```
+
 ### Running 
 To run the app in development you can run the following command:
 
@@ -45,6 +51,11 @@ To run the app in development you can run the following command:
 make run
 ```
 
+Docker
+
+```
+docker run -p 3000:3000 htmx-go
+```
 And visit http://localhost:3000 to see the app running.
 
 ## Deploying
@@ -64,3 +75,6 @@ LITESTREAM_PATH                 - The path where the data will be stored in the 
 ```
 
 Another consideration to keep in mind is that the build process assumes Linux and x64 architecture so if the docker image is being used on a different platform it may not work. This is because we pull the specific version of the tailwind standalone CLI.
+
+
+###### Thu Nov 2 11:10:11 CET 2023 redeploy

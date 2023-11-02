@@ -16,6 +16,8 @@ RUN apk add --no-cache ca-certificates
 
 WORKDIR /bin/
 
+COPY .env .
+
 # Copying binaries
 COPY --from=builder /src/todox/bin/app .
 COPY --from=builder /src/todox/bin/tools .

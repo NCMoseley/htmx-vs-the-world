@@ -1,0 +1,13 @@
+custom:
+  env: ${file(.env)}
+
+access-key-id: ${self:custom.env.LITESTREAM_ACCESS_KEY_ID}
+secret-access-key: ${self:custom.env.LITESTREAM_SECRET_ACCESS_KEY}
+
+dbs:
+  - path: todox.db
+    replicas:
+      - type: s3
+        endpoint: ${self:custom.env.LITESTREAM_ENDPOINT}
+        bucket: ${self:custom.env.LITESTREAM_BUCKET}
+        path: ${self:custom.env.LITESTREAM_PATH}
