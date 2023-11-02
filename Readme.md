@@ -75,3 +75,6 @@ LITESTREAM_PATH                 - The path where the data will be stored in the 
 ```
 
 Another consideration to keep in mind is that the build process assumes Linux and x64 architecture so if the docker image is being used on a different platform it may not work. This is because we pull the specific version of the tailwind standalone CLI.
+
+
+###### Thu Nov 2 11:10:11 CET 2023 redeploy
